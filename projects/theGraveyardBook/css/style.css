@@ -1,0 +1,1440 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------------------------------- */
+/* --------------BASIC SETUP -------------*/
+/* -------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family:'Josefin Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+body{
+  background-color: #981B1F;
+}
+
+@font-face { font-family: 'RoofRunners'; src: url('webfont/RoofRunners.eot?#iefix') format('embedded-opentype'), url('webfont/RoofRunners.woff') format('woff'), url('webfont/RoofRunners.ttf') format('truetype'), url('webfont/RoofRunners.svg#RoofRunners') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Roofrunners-Bold'; src: url('webfont/Roofrunners-Bold.eot?#iefix') format('embedded-opentype'), url('webfont/Roofrunners-Bold.woff') format('woff'), url('webfont/Roofrunners-Bold.ttf') format('truetype'), url('webfont/Roofrunners-Bold.svg#Roofrunners-Bold') format('svg'); font-weight: normal; font-style: normal; }
+
+/* -------------------------------------- */
+/* -----------REUSABLE COMPONENTS---------*/
+/* -------------------------------------- */
+h1 {
+  font-family: 'Bangers', cursive;
+  margin: 0;
+  font-size:3em;
+  letter-spacing: 0.05em;
+}
+
+.btn, input[type=submit] {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin:0 auto;
+  text-decoration: none;
+  padding:13px 0px 13px 0px;
+  font-family:"Roofrunners-Bold";
+  text-align: center;
+  color:white;
+  width:207px;
+  cursor:pointer;
+}
+
+.btn-blue, input[type=submit]{
+  background-color: #000a2e;
+  border: 2px solid #fff;
+}
+
+.btn-red, input[type=submit]{
+  background-color: #981B1F;
+  border: 2px solid #000a2e;
+  color: #fff;
+}
+
+.btn-white, input[type=submit]{
+  background-color: #fff;
+  border: 2px solid #000a2e;
+  color: #000a2e;
+}
+
+.btn:hover, input[type=submit]:hover {
+  background-color: #981B1F;
+  transition: background-color 0.5s;
+  color:white;
+}
+
+.btn-red:hover, input[type=submit]{
+  background-color: #fff;
+  border: 2px solid #000a2e;
+  color: #000a2e;
+}
+
+
+
+.row {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 145%;
+  color:#000;
+  font-size: 0.9em;
+  padding:0.4em;
+}
+
+h2 {
+  font-family:"RoofRunners";
+  font-weight:normal;
+  color:#000;
+  font-size:1em;
+  letter-spacing: 0.1em;
+}
+
+h3{
+  font-weight:700;
+  font-size: 0.9em;
+}/*only used in neilsworks*/
+
+.whitebox{
+  border: 4px solid black;
+  background-color: white;
+  padding:20px;
+}
+
+.imgborder ,.neilgaimanbox img{
+  border: 5px solid black;
+}/*5px desktop, 4px tablet, 1px mobile*/
+
+.page{
+  background-image: url(../img/bg.png);
+  background-repeat: repeat-y;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+/* -------------------------------------- */
+/* -----------------HEADER--------------- */
+/* -------------------------------------- */
+
+/* ------- Home Masthead Background image------ */
+header.home-mast {
+  background-image: url(../img/mastheadbg.png);
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ------- Other pages Masthead Background image------ */
+header.explore-mast,header.books-mast {
+  background-image: url(../img/titlebg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-text-box-title {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*to vertically align the text */
+  height:55vh;
+  margin-top: 2.5em; /*to make up for nav bar*/
+}
+
+.header-text-box-title h1{
+  color: #981B1F;
+  font-size:6.5em;
+  text-align: center;
+  text-shadow:
+  -3px -3px 0 #fff,
+  3px -3px 0 #fff,
+  -3px 3px 0 #fff,
+  3px 3px 0 #fff;
+  /* -webkit-text-stroke: 3px white; */
+}
+
+/* ----------------Logo------------------ */
+.logo {
+  width:150px;
+  padding: 0.5em 1em;
+}
+
+/* ----------Navigation Bar-------------- */
+nav {
+  background-color: #981B1F;
+  /* display:block; */
+  position:fixed;
+  width:100%;
+  z-index: 900;
+  top:0;
+}
+
+.redbox{
+  background-color: #981B1F;
+  display:none;
+  margin-top: 0px;
+  height:100vh;
+  width:100vw;
+  position: absolute;
+  width:100%;
+  text-align: center;
+  z-index: -1;
+}
+
+.main-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav li {
+  display: inline-block;
+  font-family:"RoofRunners-Bold";
+  font-size: 0.8em;
+  padding:1.2em 1em;
+  margin-bottom:-7px;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover, a:active{
+  border-bottom: 2px solid #fff;
+}
+
+#buynow {
+  color: #981B1F;
+  background-color: white;
+  padding: 0.8em 1em 0.6em 1em;
+  border-bottom: none;
+}
+
+#buynow:hover{
+  background-color: #DE1E24;
+  color: #fff;
+  transition: 0.5s;
+}
+
+
+/*Responsive nav bar*/
+nav label, nav #toggle {
+    display: none;
+}
+
+.logo-mobile{
+  display: none;
+  width: 6em;
+}
+
+nav a {
+  margin-bottom:-7px;
+}
+
+/* ----------Footer-------------- */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #981B1F;
+  color: white;
+	padding:0.5em;
+	font-family: "Roofrunners-Bold";
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+.footer-top, .footer-btm{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top li{
+	padding: 1em;
+	display:block;
+}
+
+.footer-top li a{
+	text-decoration: none;
+	color:white;
+  border-bottom: 2px solid transparent;
+}
+
+.footer-top li a:hover {
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.5s;
+}
+
+.footer-btm li{
+  display:block;
+}
+
+.footerlogo{
+  padding: 0.5em 1em;
+}
+
+.findus{
+  padding: 1em;
+}
+
+.footer-top{
+	flex-wrap: wrap;
+}
+
+.footer-top li{
+	padding:0.7em 0.5em;
+}
+
+
+.footer-top li:first-child{
+  width: 100%;
+	text-align: center;
+	padding-top:1em;
+  font-family: "RoofRunners";
+  font-size: 0.8em;
+}
+
+.findus{
+  font-family: "RoofRunners";
+  font-size: 0.8em;
+}
+
+
+/* -----------------TABS SETUP--------------------------- */
+
+.tabbox{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+.tab {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab a {
+  text-decoration: none;
+}
+
+.tablinks {
+  float: left;
+  cursor: pointer;
+  padding: 14px 0px;
+  width:200px; /*maximum 6 tabs, minimum screen size is 1200px width*/
+  transition: 0.3s;
+  font-family:"RoofRunners-Bold";
+  font-size: 1em;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  border-left: none;
+}
+
+.tab:first-child{
+  border-left: 3px solid #000;
+} /*apply left border on first tab*/
+
+.tab button:hover {
+    background-color: #981B1F;
+}
+
+.tabinactive{
+  background-color: #132B56;
+  color:#fff;
+}
+
+.tabactive{
+  background-color: #981B1F;
+  color:#fff;
+}
+
+.tabcontent {
+  padding: 1px 0px;
+  border-top: none;
+} /*prevents white box from appearing*/
+
+
+
+
+
+
+/* --------------------------------HOMEPAGE-------------------------------- */
+/* --------------------------------HOMEPAGE-------------------------------- */
+/* --------------------------------HOMEPAGE-------------------------------- */
+/* --------------------------------HOMEPAGE-------------------------------- */
+/* --------------------------------HOMEPAGE-------------------------------- */
+
+.home-content{
+  position: relative;
+  top:22vh;
+}
+
+.mastheadbubblecontainer{
+  width:100%;
+  display: flex;
+  align-items: center;
+} /*container for bubble and title*/
+
+.mastheadbubblecontainer h1{
+  color: #981B1F;
+  font-size:7.5em;
+  text-align: center;
+  /* -webkit-text-stroke: 7px white; */
+  text-shadow:
+  -3px -3px 0 #fff,
+  3px -3px 0 #fff,
+  -3px 3px 0 #fff,
+  3px 3px 0 #fff;
+  line-height: 0.9em;
+  /* paint-order: stroke fill; */
+}
+
+
+.titlebox{
+  width:90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} /*to align text box to the middle*/
+
+.mastheadbubble{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width:700px;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+} /*to align bubble to the middle*/
+
+.home-mast h2{
+  color:#fff;
+  text-align: center;
+  width:100%;
+  margin-top: 3vh;
+}
+
+.btn-container{
+  width:100%;
+  vertical-align:middle;
+  align:center;
+  margin-top: 4vh;
+}
+
+.knife{
+  position: absolute;
+  left: 0%;
+  bottom:13vh; /*position relative to the bottom*/
+  width:40%;
+}
+
+.btn-readmore{
+  margin-top: 8px;
+}
+
+
+/* -------------------------------------- */
+/* ----------------SECTION2-------------- */
+/* -------------------------------------- */
+
+.section {
+  background-image: url(../img/bg.png);
+  background-repeat: repeat-y;
+  /* background-size: cover; */
+  background-position: center;
+  margin-top: -1px;
+  padding-top:15vh;
+}
+
+.ignorethis{
+  position: relative;
+  height: 1px;
+}
+/*without this the background will not show*/
+
+.bubble h1 {
+  text-align: center;
+  margin-top: -0.6em;
+}
+
+.bubble {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.section2-left{
+  width:58%;
+  float: left;
+  padding-left: 7%;
+}
+
+.listen-box{
+  position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width:51%;
+}
+
+.bubble-listen-box img{
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+  width:360px;
+}
+
+.video{
+  position: relative;
+  width:576px;
+}
+
+.video iframe { /*ratio is 16 to 9*/
+  width: 576px;
+  height:324px;
+}
+
+.psst{
+  position: relative;
+  width: 576px;
+}
+
+.section2-left h2{
+  padding:20px;
+}
+
+
+.section2-right{
+  width:42%;
+  float: left;
+  padding-right: 7%;
+}
+
+
+.upcoming-box{
+  position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width:35%;
+}
+
+
+.bubble-upcoming-box img{
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+  width:360px;
+}
+
+.section2-right table{
+  font-family: "RoofRunners";
+  color:#000;
+  border-spacing: 40px;
+  border: 5px solid black;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .btn-viewall{
+  width:207px;
+} */
+
+/* -------------------------------------- */
+/* ----------------SECTION3-------------- */
+/* -------------------------------------- */
+
+
+.reviews-box{
+  position: absolute;
+  left: 51%;
+  transform: translateX(-50%);
+}
+
+
+
+.bubble-reviews-box img{
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+  width:360px;
+}
+
+.review{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  margin-top:2%;
+  /*
+  left:50%;
+  transform: translateX(-50%);*/
+}
+
+.review1{
+  width:60%;
+  margin-top: 0;
+}
+
+.review2{
+  width:85%;
+}
+
+.review3{
+  width:75%;
+}
+
+.reviewsbox p{
+  padding-bottom:0;
+}
+
+/* -------------------------------------- */
+/* ----------------SECTION4-------------- */
+/* -------------------------------------- */
+.section4box{
+  width:100%;
+  position:relative;
+  padding-top: 0vh;
+}
+
+.hplocations{
+  width:80%;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.secondrow{
+  display: flex;
+  justify-content: center;
+}
+
+.hpcharacters{
+  margin-left: 10%;
+  position: relative;
+  width:40%;
+  float: left;
+}
+
+.hplocations2{
+  display:none;
+  /* only display when width is below 1140px */
+}
+
+.secondrow-right{
+  margin-left: 2%;
+  width:38%;
+  float: left;
+}
+
+
+.bubble-explore-box{
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.explore-box{
+  position: absolute;
+  left: 46%;
+  transform: translateX(-50%);
+}
+
+.bubble-explore-box h1{
+  width:360px;
+}
+
+.bubble-explore-box img{
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+  width:360px;
+}
+
+.section4 h2{
+  padding: 20px;
+  text-align: center;
+}
+
+.explore-buttonsbox{
+  width:100%;
+  margin-top: 20px;
+  display: inline-grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
+.btn-characters{
+  grid-area: 1/1/4/2;
+  align-self: center;
+  justify-self: center;
+  margin-left: 0;
+}
+
+.btn-locations{
+  grid-area: 4/1/7/2;
+  align-self: center;
+  justify-self: center;
+  margin-left: 0;
+}
+
+.btn-timeline{
+  grid-area: 1/2/3/3;
+  align-self: center;
+  justify-self: center;
+  margin-right: 0;
+}
+
+.btn-skills{
+  grid-area: 3/2/5/3;
+  align-self: center;
+  justify-self: center;
+  margin-right: 0;
+}
+
+.btn-9types{
+  grid-area: 5/2/7/3;
+  align-self: center;
+  justify-self: center;
+  margin-right: 0;
+}
+
+/* -------------------------------------- */
+/* ----------------SECTION5-------------- */
+/* -------------------------------------- */
+
+.section5-left{
+  width:40%;
+  float: left;
+  margin-left:10%;
+  position: relative;
+}
+
+
+.about-box{
+  position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width:100%;
+}
+
+
+
+.bubble-about-box img{
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+  width:370px;
+}
+
+.bubble-neil-box{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 130px;
+}
+
+.neil-box{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width:100%;
+  color:#000
+}
+
+
+
+.bubble-neil-box img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width:370px;
+}
+
+.author{
+  width:260px;
+  float:left;
+  margin-bottom: 25vh;
+}
+
+.author-buttonsbox{
+  float:left;
+  margin-left: 10px;
+}
+
+.btn-awards{
+  margin-top: 10px;
+}
+
+.section5-right {
+  float:left;
+  width:40%;
+}
+
+.works-box{
+  position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width:40%;
+}
+
+
+.bubble-works-box img{
+  position: relative;
+  left: 53%;
+  transform: translateX(-50%);
+  width:370px;
+}
+
+.works-buttonsbox{
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  /* grid-template-areas:
+  'audio books'
+  'comics films'
+  'television theatre' */
+}
+
+.works-buttonsbox h2{
+  text-align: center;
+  padding:10px;
+}
+
+.somanymorebox{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width:75%;
+  text-align: center;
+}
+
+.somanymorebox .whitebox{
+  padding:12px;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -----------------READMORE----------------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+.page-readmore{
+  background-image: url(../img/bg.png);
+  background-repeat: repeat-y;
+}
+
+.page-readmore h1{
+  position: relative;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  font-size: 3.5em;
+  padding-top: 1em;
+}
+
+.page-readmore .whitebox {
+  position: relative;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  top:3%;
+}
+
+.page-readmore p{
+  text-indent: 4%;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.bottombox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.bottomtext{
+  width:40%;
+}
+
+.bottombox h2{
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.purchasenow{
+  font-family:"Roofrunners-Bold";
+  font-size: 1.5em;
+  margin-top: 0.2em;
+}
+
+.purchasebox{
+  margin-top: 1em;
+  padding-bottom: 3em;
+}
+
+.leftline, .rightline {
+  display: block;
+  height:2px;
+  background-color: white;
+  content:" ";
+  width: 20%;
+}
+
+
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -----------------EXPLORE - CHARACTERS----------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+#characters h1{
+  text-align: center;
+  width:100%;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding: 0 0.2em;
+}
+
+#characters span h1 {
+  margin-top: 2em;
+}
+
+#characters:last-child,#about:last-child{
+  padding-bottom: 4em;
+}
+
+.bod-left img, .lupe-left img, .owens-left{
+  border-right:none;
+}
+
+.silas-right img , .owens-right img{
+  border-left:none;
+}
+
+.characterbox{
+  padding: 3% 5% 3% 5%;
+  display:flex;
+  justify-content:center;
+  width:100%
+}
+
+/* character 1: bod*/
+.bod-right{
+  width:75%;
+  padding:20px;
+}
+
+.bod-left{
+  width:25%;
+}
+
+.bod-left img{
+  width:100%; /*hundred percent of the container which is 25%*/
+}
+
+.bod-right a {
+  text-decoration: none;
+}
+
+.clickhere{
+  font-weight: 700;
+}
+
+/* character 2: silas*/
+.silas-left{
+  width:65%;
+  padding:20px;
+}
+
+.silas-right{
+  width:35%;
+}
+
+.silas-right img{
+  width:100%;
+}
+
+/* character 3: miss lupescu*/
+.lupe-left{
+  width:35%;
+}
+
+.lupe-left img{
+  width:100%;
+}
+
+.lupe-right{
+  width:65%;
+  padding:20px;
+}
+
+/* character 4: owens*/
+.owens-left{
+  width:75%;
+  padding:20px;
+  height: 100%; /*for the textbox to fit size of the text*/
+}
+
+.owens-right{
+  width:65%;
+}
+
+.owens-right img{
+  width:100%;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -----------------EXPLORE - LOCATIONS------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+#locations h1{
+  text-align: center;
+  width:100%;
+  margin-top: 1.5em;
+}
+
+#locations h1:first-child{
+  margin-top: 2em;
+}
+
+#locations:last-child{
+  padding-bottom: 4em;
+}
+
+.textbox h2{
+  margin:0 auto;
+  text-align: center;
+  padding:10px;
+  border: 3px solid black;
+  background-color: white;
+}
+
+.textbox{
+  position: absolute;
+}
+
+.house , .graveyard , .oldtown , .ghulheim {
+  position: relative;
+}
+
+.house img, .graveyard img, .oldtown img, .ghulheim img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.house img{
+  width:576px;
+}
+
+.house .textbox, .graveyard .textbox, .oldtown .textbox{
+  top:15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.house .textbox h2{
+  padding:10px 15px;
+}
+
+.graveyard .textbox,.oldtown .textbox {
+  width:600px;
+}
+
+.ghulheim{
+  width: 675px; /*image size*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ghulheim .textbox-top{
+  top:15px;
+  left:15px;
+  width:250px;
+}
+
+.ghulheim .textbox-bottom{
+  bottom:15px;
+  right:15px;
+  width:250px;
+}
+
+
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -----------------ABOUT-------------------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+.about-mast{
+  height:810px;
+  background-image: url(../img/mastheadbg.png);
+  background-size: cover;
+  background-position: center;
+  margin:0;
+}
+
+.about-container{
+  display: block;
+}
+
+.about-mast-content{
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutauthor h1{
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 18vh;
+  margin:0;
+}
+
+.textlarge h1{
+  color: #981B1F;
+  /* -webkit-text-stroke: 7px white;
+  paint-order: stroke fill; */
+  text-shadow:
+  -3px -3px 0 #fff,
+  3px -3px 0 #fff,
+  -3px 3px 0 #fff,
+  3px 3px 0 #fff;
+  text-align: center;
+  font-size: 8em;
+  margin:0px;
+  z-index: 10;
+  position: relative;
+  line-height: 0.9em;
+}
+
+.about .tablinks{
+  width: 600px; /*1200px divided by 2 */
+}
+
+.neilgaimanbox{
+  text-align: center;
+  margin-top: -2em;
+  z-index: 9;
+  position: relative;
+}
+
+.neilgaimanbox img{
+  height:370px;
+}
+
+#about .whitebox {
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h1{
+  margin-left:10%;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+#about span h1 {
+  margin-top: 1.5em;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -----------------NEIL'S WORKS - BOOKS----------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+.books-mast{
+  height:55vh;
+}
+
+.page-books h1{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.masonry {
+  -webkit-column-count: 3;
+  -moz-column-count:3;
+  column-count: 3;
+
+  -webkit-column-gap: 0.4em;
+  -moz-column-gap: 0.4em;
+  column-gap: 0.4em;
+
+  margin: 1.5em;
+
+  font-size: .8em;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 6em 0 4em 0;
+}
+
+.item {
+  display: inline-block;
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid black;
+  color:#000;
+  text-align: center;
+}
+
+.item img{
+  width:65%;
+  margin: 0.5em;
+}
+
+/*.item styling, does not affect masonry layout*/
+.blackline {
+  display: block;
+  height:2px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.item h2{
+  font-weight: bold;
+  //font-size: 1.3em;
+  padding-bottom: 0.6em;
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 span{
+  padding-bottom:1em;
+}
+
+.item p{
+  padding: 0;
+}
+
+.item h3{
+  padding: 0.7em 0 0.3em 0 ;
+}
+
+/*ASS 2: EDIT/DELETE CONTENT*/
+.btn-2col {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-2col>div {
+  padding:0.8em 0.8em 0.3em 0.8em;
+  width:100%;
+}
+
+.item .btn, input[type=submit] {
+  padding:9px 0px 9px 0px;
+  font-size: 0.7em;
+  margin-left: inherit;
+  margin-right: inherit;
+  width:100%;
+}
+
+#plusbtn{
+  margin:0.5em;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ---------------FORMS REUSABLE COMPONENTS-------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+form label {
+  font-family:"Roofrunners-Bold";
+}
+
+form input,textarea {
+  border: 1px solid #fff;
+  margin-top:0.3em;
+}
+
+input:required, textarea:required{
+  box-shadow: 0 0 5px #d80000;
+}
+
+input:valid, textarea:valid {
+  box-shadow: 0 0 5px #3ad800;
+}
+
+form > div {
+  padding-bottom: 1em;
+}
+
+#fb-result {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "RoofRunners-Bold";
+  padding-top:0.8em;
+  letter-spacing: 0.1em;
+
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -----------------REGISTER----------------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+.page-register h1{
+  color: #981B1F;
+  font-size:6.5em;
+  text-align: center;
+  padding:1em 0 0.3em;
+  text-shadow:
+  -3px -3px 0 #fff,
+  3px -3px 0 #fff,
+  -3px 3px 0 #fff,
+  3px 3px 0 #fff;
+}
+
+.page-register h2{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+  width:80%;
+}
+
+.regform {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #981B1F;
+  padding:2.5em 2.5em 1em 2.5em;
+}
+
+.regform h1 {
+  padding-top: 1em;
+}
+
+.regformbox{
+  padding:2em 3em 3em 3em;
+}
+
+.regform input{
+  border:1px solid #fff;
+  box-shadow:none;
+}
+
+.regform input:required, .regform textarea:required{
+    border-left: 5px solid #d80000;
+}
+
+.regform input:optional {
+    border-left: 5px solid #d3d3d3;
+}
+.regform input:valid ,.regform textarea:valid {
+    border-left: 5px solid #3ad800;
+}
+
+.regform p{
+  font-size: 0.7em;
+  color:#fff;
+  padding:0.3em 0 0 0;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ----------------------ADD BOOK------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+.addbookbox{
+  padding-bottom: 5em;
+}
+
+.item-addbook {
+  display: block;
+  background: #fff;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid black;
+  color:#000;
+  text-align: center;
+}
+
+.item img{
+  width:65%;
+  margin: 0.5em;
+}
+
+.page-addbook h1{
+  color: #981B1F;
+  font-size:3.5em;
+  text-align: center;
+  padding:1.4em 0 0.2em;
+  text-shadow:
+  -3px -3px 0 #fff,
+  3px -3px 0 #fff,
+  -3px 3px 0 #fff,
+  3px 3px 0 #fff;
+}
+
+.fileinput{
+	width: 90%;
+}
+
+.form-btn-2col{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-2col>button {
+  width:100%;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ----------------------EDIT BOOK----------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+#birdidhidden{
+  padding:0;
+}

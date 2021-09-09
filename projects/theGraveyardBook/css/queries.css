@@ -1,0 +1,851 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px){
+.row{
+	width:100%;
+}
+
+html{
+	font-size: 20px;
+}
+
+.btn{
+	width:190px;
+}
+
+.section,.bubble-upcoming-box,.bubble-works-box {
+	padding-top: 7vh;
+}
+
+.whitebox, .section2-right table{
+	padding:12px;
+}
+
+.tabbox{
+	display: block;
+}
+
+header.home-mast {
+  background-image: url(../img/mastheadbg-ipad.png);
+}
+
+header.explore-mast, header.books-mast{
+  background-image: url(../img/titlebg-ipad.png);
+}
+
+header.about-mast{
+	background-image: url(../img/mastheadbg-ipad.png);
+}
+
+.header-text-box-title h1 {
+	margin-top: 0.5em;
+	width:90%;
+}
+
+#about h1:first-child{
+	margin-top: 2em;
+}
+
+#characters h1:first-child, #locations h1:first-child{
+	margin-top: 3em;
+}
+
+/* .addbookbox{
+	margin-top: 3em;
+
+} */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------HOMEPAGE------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+header.home-mast {
+  background-image: url(../img/mastheadbg-ipad.png);
+}
+
+.listen-box,.upcoming-box,.about-box,.works-box{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-nav .logo{
+	margin-left: 2%
+}
+
+.home-content{
+	top:27vh;
+}
+
+.knife{
+	width: 60%;
+	bottom:16vh;
+}
+
+.home-mast h2{
+	top:52vh;
+}
+
+.btn-container{
+	top:57vh;
+}
+
+/* ------------------------------SECTION 2---------------------------- */
+.bubble img{
+	width:330px;
+}
+
+.section2-right,.section2-left{
+	float:none
+}
+
+.section2-left,.listen-box,.section2-right,.upcoming-box{
+	padding:0%;
+	width:100%;
+}
+
+/* .bubble-listen-box h1,.bubble-upcoming-box h1{
+	margin-top: 0%;
+} */
+
+.video,.psst{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ------------------------------SECTION 3---------------------------- */
+
+.section3 .whitebox {
+	padding:15px;
+}
+
+.bubble-explore-box{
+	position: relative;
+}
+
+.explore-box{
+	left: 50%;
+}
+
+.hpcharacters,.secondrow-right{
+	float:none;
+}
+
+.hpcharacters {
+	margin:0;
+	left: 50%;
+	transform: translateX(-50%);
+	width:60%;
+}
+
+.hplocations{
+	display:none;
+}
+
+.hplocations2{
+	display: block;
+	left: 50%;
+	transform: translateX(-50%);
+	width:80%;
+	margin-left: 10%;
+	margin-top: 10px;
+	margin:0;
+	position: relative;
+}
+
+.secondrow-right{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+/* ------------------------------SECTION 5---------------------------- */
+.section5-left,.section5-right{
+	float:none;
+}
+
+.section5-left{
+	margin-left: auto;
+	margin-right: auto;
+	width:260px;
+}
+
+.author{
+	float:none;
+	margin-bottom: 10px;
+}
+
+.author-buttonsbox{
+	float: none;
+}
+
+.bubble-neil-box{
+	margin-top: 160px;
+}
+
+.section5-right{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vh;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------EXPLORE-CHARACTERS------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.tab{
+	width:100%;
+}
+
+.tabcol3{
+	width:33.333%!important;
+	border-bottom: none;
+}
+
+.tabcol2{
+	width:50%!important;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------NEIL'S WORKS---------------------------- */
+/* ---------------------------------------------------------------------- */
+.tabrow2{
+	border-bottom: 3px solid #000;
+}
+
+.masonry{
+	width:90%;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------ABOUT THE AUTHOR-------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.textlarge h1{
+	font-size: 5em;
+}
+
+/* ---------------------------------------------------------------------- */
+/* -------------------------------REGISTER------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.regform {
+	width:90%;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------ADD BOOK------------------------------ */
+/* ---------------------------------------------------------------------- */
+.item-addbook{
+	width: 60%;
+}
+
+
+
+}
+
+
+
+
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+
+html{
+	font-size: 18px;
+}
+
+.btn{
+	width:140px;
+}
+
+.whitebox, .section2-right table{
+	padding:7px;
+	border: 3px solid black;
+}
+
+.imgborder,.neilgaimanbox img{
+  border: 4px solid black;
+}/*5px desktop, 4px tablet, 1px mobile*/
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------HOMEPAGE------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+.main-nav li{
+	padding:1em 0.4em;
+	margin-bottom:-4px;
+}
+
+.logo{
+	width: 130px;
+}
+
+.home-content{
+	top:24vh;
+}
+.mastheadbubble{
+	width: 600px;
+}
+
+.mastheadbubblecontainer h1{
+	font-size:6.5em;
+	text-shadow:
+	-2px -2px 0 #fff,
+	2px -2px 0 #fff,
+	-2px 2px 0 #fff,
+	2px 2px 0 #fff;
+}
+
+.knife{
+	bottom:10vh;
+}
+
+
+/* ------------------------------SECTION 2---------------------------- */
+.bubble img{
+	width:300px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------ABOUT-------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+#about .whitebox {
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h1{
+  margin-left:5%;
+}
+
+.bubbleyellow img{
+	width:230px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------READMORE------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+.section-readmore h1{
+	width:90%;
+}
+
+.section-readmore .whitebox{
+	width:90%;
+}
+
+.bottomtext{
+	width: 50%;
+}
+
+.leftline, .rightline {
+	width: 20%;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------NEIL'S WORKS---------------------------- */
+/* ---------------------------------------------------------------------- */
+.masonry{
+	width:90%;
+	-webkit-column-count: 2;
+	-moz-column-count:2;
+	column-count: 2;
+	font-size: 0.9em;
+}
+
+}
+
+
+
+
+
+
+/* Small phones to small tablets: from 481pxto 767px */
+@media only screen and (max-width: 767px){
+
+.whitebox, .section2-right table{
+	padding:5px;
+}
+
+.imgborder,.neilgaimanbox img{
+  border: 3px solid black;
+}/*5px desktop, 4px tablet, 1px mobile*/
+
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------HOMEPAGE------------------------------ */
+/* ---------------------------------------------------------------------- */
+/* RESPONSIVE NAV BAR */
+nav{
+	display: block;
+} /*for the hamburger button*/
+
+.main-nav{
+	display: none;
+}
+
+.logo-mobile{
+  display: block;
+	position: absolute;
+	padding:25px;
+}
+
+.redbox{
+	display: block;
+}
+
+nav {
+	background-color: transparent;
+}
+
+nav label {
+	display: block;
+	margin:40px 30px 0 0;
+	color:white;
+	font-size:1.5em;
+	cursor: pointer;
+	float:right;
+	position: relative; /*in order for z-index to work*/
+	z-index: 999;
+}
+
+#toggle{
+	z-index: 999;
+}
+
+#toggle:checked + .main-nav {
+	display: block;
+}
+
+.navright,.main-nav li{
+	margin: 0;
+}
+
+.logo{
+	display: none;
+}
+
+.main-nav li{
+	display:block;
+	width:100%;
+	text-align: center;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+
+.main-nav li:first-child{
+	margin-top: 0;
+	padding-top: 5em;
+}
+
+.header-text-box-title {
+  margin-top: 0;
+}
+
+
+.mastheadbubble{
+	width: 510px;
+}
+
+.mastheadbubblecontainer h1{
+	font-size:5em;
+}
+
+.titlebox{
+	width:100%;
+}
+
+/* ------------------------------SECTION 2---------------------------- */
+.video{
+	padding-top:56.25%;
+	width:100%;
+}
+
+.video iframe { /*ratio is 16 to 9*/
+	position:absolute;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+}
+
+.psst{
+	width:90%;
+	margin-top: 10px;
+}
+
+/* ------------------------------SECTION 2---------------------------- */
+.review {
+	width:90%;
+}
+
+/* ------------------------------SECTION 4---------------------------- */
+.hpcharacters{
+	width:90%;
+}
+
+.hplocations2{
+	width:90%;
+}
+
+.secondrow-right{
+	width:90%;
+}
+
+.explore-buttonsbox .btn{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ------------------------------SECTION 5---------------------------- */
+.author{
+	width:80%;
+}
+
+.section5-right,.works-box{
+	width:60%;
+}
+
+/* ------------------------------FOOTER---------------------------- */
+.footer-top li{
+	padding:0.4em;
+}
+
+.footer-top li:first-child{
+	padding:1em;
+}
+
+.footer-btm{
+	padding:1em 0 0.5em 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------EXPLORE-CHARACTERS------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.bod-left img, .lupe-left img, .owens-left{
+  border-right:3px solid black;
+}
+.silas-right img , .owens-right img{
+  border-left:3px solid black;
+}
+
+.characterbox {
+	display: flex;
+	flex-direction: column;
+	padding: 5% 0%;
+	width: 100%;
+}
+
+.characterbox-reverse {
+	flex-direction: column-reverse;
+}
+/*for boxes that has text appearing before image*/
+
+.char-text{
+	width:95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.char-img{
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------EXPLORE-LOCATIONS------------------------- */
+/* ---------------------------------------------------------------------- */
+.house img, .graveyard img, .oldtown img, .ghulheim{
+  width:100%;
+}
+
+.ghulheim img{
+	width: 100%;
+}
+
+.textbox{
+  position: relative;
+	width: 80%!important;
+}
+
+.ghulheim .textbox{
+	width: 80%!important;
+	top:0;
+	left:0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ghulheim .textbox-top{
+	margin-bottom: 15px;
+}
+
+.ghulheim .textbox-bottom{
+	margin-top: 15px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------READMORE------------------------------ */
+/* ---------------------------------------------------------------------- */
+.bottomtext{
+	width: 60%;
+}
+.leftline, .rightline {
+	width: 15%;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* -------------------------------REGISTER------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.regformbox {
+	padding:3em 0em;
+}
+
+.regform {
+	width:95%;
+	padding:2.5em 1em 1em 1em;
+}
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------ADD BOOK------------------------------ */
+/* ---------------------------------------------------------------------- */
+.item-addbook{
+	width: 80%;
+}
+
+
+}
+
+
+
+
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+.whitebox, section2-right table{
+	border: 2px solid black;
+	padding:5px;
+}
+
+.btn{
+	padding:11px;
+}
+
+.tablinks {
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.tab:first-child{
+  border-left: 2px solid #000;
+} /*apply left border on first tab*/
+
+.tabrow2{
+	border-bottom: 2px solid #000;
+}
+.btn-blue{
+	border: 1px solid #fff;
+}
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------HOMEPAGE------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+
+header.home-mast {
+  background-image: url(../img/mastheadbg-m.png);
+}
+
+header.explore-mast, header.books-mast{
+  background-image: url(../img/titlebg-m.png);
+}
+
+.home-mast h2{
+	padding: 20px 15px 0px 15px;
+}
+
+.mastheadbubble{
+	width: 370px;
+}
+
+.mastheadbubblecontainer h1{
+	font-size:3.5em;
+	padding:0px 20px;
+}
+
+.knife{
+	bottom:7vh;
+}
+
+.bubble h1{
+	font-size: 1.9em;
+}
+
+/* ------------------------------SECTION 2---------------------------- */
+.bubble img{
+	width:210px;
+}
+
+.tablecontainer{
+	padding:10px;
+}
+
+/* ------------------------------SECTION 3---------------------------- */
+.reviewsbox .whitebox{
+	padding:15px;
+}
+
+/* ------------------------------SECTION 4---------------------------- */
+.section4 h2{
+	padding: 10px;
+}
+
+/* ------------------------------SECTION 5---------------------------- */
+.bubble-neil-box{
+	margin-left: 100px;
+}
+
+.section5-right,.works-box{
+	width:90%;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------EXPLORE-CHARACTERS------------------------- */
+/* ---------------------------------------------------------------------- */
+.header-text-box-title h1{
+	font-size: 4.5em;
+	text-shadow:
+	-1.5px -1.5px 0 #fff,
+	1.5px -1.5px 0 #fff,
+	-1.5px 1.5px 0 #fff,
+	1.5px 1.5px 0 #fff
+}
+
+/* ---------------------------------------------------------------------- */
+/* ----------------------------EXPLORE-LOCATIONS------------------------- */
+/* ---------------------------------------------------------------------- */
+.textbox{
+	width: 95%!important;
+}
+
+.ghulheim .textbox{
+	width: 95%!important;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------ABOUT-------------------------------- */
+/* ---------------------------------------------------------------------- */
+.neilgaimanbox img{
+	height: 230px;
+}
+
+.aboutauthor h1{
+	font-size: 2em;
+}
+
+.textlarge h1{
+  text-shadow:
+  -1.7px -1.7px 0 #fff,
+  1.7px -1.7px 0 #fff,
+  -1.7px 1.7px 0 #fff,
+  1.7px 1.7px 0 #fff;
+  text-align: center;
+  font-size: 4em;
+  margin:0px;
+  z-index: 10;
+  position: relative;
+  line-height: 0.9em;
+}
+
+.about-mast{
+	height:520px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------READMORE------------------------------ */
+/* ---------------------------------------------------------------------- */
+.section-readmore h1{
+	font-size: 2em;
+	padding-top: 2.5em;
+}
+
+.bottomtext{
+	width: 100%;
+}
+.leftline, .rightline {
+	display:none;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------NEIL'S WORKS---------------------------- */
+/* ---------------------------------------------------------------------- */
+.masonry{
+	width:95%;
+	-webkit-column-count: 1;
+	-moz-column-count:1;
+	column-count: 1;
+	font-size: 1em;
+}
+
+.item{
+	padding:0.5em;
+}
+
+/* ---------------------------------------------------------------------- */
+/* -------------------------------REGISTER------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.page-register h1{
+	padding-top: 1.5em;
+	font-size: 4.5em;
+	text-shadow:
+	-1.5px -1.5px 0 #fff,
+	1.5px -1.5px 0 #fff,
+	-1.5px 1.5px 0 #fff,
+	1.5px 1.5px 0 #fff;
+}
+
+.regformbox{
+	padding: 2em 0;
+}
+
+.regform{
+	padding-top: 2em;
+	padding-bottom: 1em;
+	padding-left: 0.4em;
+}
+
+.regform label{
+	font-size: 0.9em;
+}
+
+.page-register h2 {
+	width: 95%;
+}
+
+/* ---------------------------------------------------------------------- */
+/* --------------------------------ADD BOOK------------------------------ */
+/* ---------------------------------------------------------------------- */
+.item-addbook{
+	width: 95%;
+}
+
+
+
+
+
+}

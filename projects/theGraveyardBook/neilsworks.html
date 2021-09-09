@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/queries.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Josefin+Sans:400,400i,700" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- <script src="js/myclient.js"></script>
+  <script src="js/std.js"></script> -->
+
+</head>
+<body>
+
+  <!-------------- MASTHEAD --------------->
+  <header class="books-mast">
+    <nav>
+      <!-- mobile responsive nav bar -->
+      <a href="index.html"><img class="logo-mobile" src="img/logo-m.svg" alt="logo"></a>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+
+      <ul class="main-nav row">
+        <!-- redbox for mobile responsive nav bar -->
+        <div class="redbox"></div>
+
+        <a href="index.html">
+          <img class="logo" src="img/logo.svg" alt="logo">
+        </a>
+
+        <div class="navright">
+          <li><a href="neilsworks.html">neil's works</a></li>
+          <li><a href="about.html">about author</a></li>
+          <li><a href="explore-characters.html">explore</a></li>
+          <li><a href="#">register</a></li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#" id="buynow">buy now</a></li>
+        </div>
+
+      </ul>
+    </nav>
+
+      <div class="header-text-box-title">
+        <h1>neil's works</h1>
+      </div>
+
+      <div class="tabbox">
+        <div class="tab">
+          <button class="tablinks tabinactive tabcol3">Audio</button>
+          <button class="tablinks tabactive tabcol3">Books</button>
+          <button class="tablinks tabinactive tabcol3">Comics</button>
+          <button class="tablinks tabinactive tabcol3 tabrow2">Films</button>
+          <button class="tablinks tabinactive tabcol3 tabrow2">Television</button>
+          <button class="tablinks tabinactive tabcol3 tabrow2">Theatre</button>
+        </div>
+      </div>
+
+
+  </header>
+
+  <!------------ CONTENT------------>
+
+  <section class="page page-books">
+    <div id="books" class="tabcontent">
+
+      <div class="masonry">
+        	<!-- <button onclick="return loadBirds();">Load Books</button> -->
+          <!-- <a href="addBook.html"><div class="item"> -->
+            <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In  -->
+            <!-- <svg id ="plusbtn" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="62px" height="62px" viewBox="0 0 62 62" style="enable-background:new 0 0 62 62;" xml:space="preserve">
+            <defs>
+            </defs>
+            <g>
+            	<path d="M31,0C13.9,0,0,13.9,0,31s13.9,31,31,31s31-13.9,31-31S48.1,0,31,0z M49,32.5H32.5V49h-3V32.5H13v-3h16.5V13h3v16.5H49
+            		V32.5z"/>
+            </g>
+            </svg>
+
+            <h2><span>click to add new book</span></h2>
+
+          </div></a>
+
+          <div id="bookslist">
+            <?php
+              include_once("php/view.photo.php");
+
+              echo displayBirds($photoListing); // print within this div!
+            ?> -->
+  <div class="item">
+    <img src="img/bkcovers/awalking.jpg" alt="cover">
+    <h2>A Walking Tour of the Shambles</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>Gene Wolfe and Neil Gaiman invite you to tour the Shambles, that historic old Chicago neighborhood which miraculously survived the Great Fire of 1871. (''Ya can't burn Hell.'' as one local politician laughingly remarked.) Uniquely Chicago, the Shambles offers an array of delights for the intrepid sightseer: Cereal House with its Terribly Strange Bed (be sure to fill out the ''next of kin'' form if you stay the night: a quaint touch adding to the fun of an overnight visit); the House of Clocks boasts a collection of 20,000 time pieces -- make sure you arrive on the hour, for an unforgettable moment; the historic H.H. Holmes' House with the bars on his children's windows still intact; Saunders Park, a soothing respite from the city streets (if one is careful), with its gardens, statuary, ornamental lake and the infamous Petting Zoo (a favorite with children, but it's best not to bring your own); plus many more intriguing sights...</p>
+    <h3>RELEASE DATE:</h3>
+    <p>April 15, 2002</p>
+    <h3>ISBN:</h3>
+    <p>9780961035266</p>
+    </div>
+
+  <div class="item">
+    <img src="img/bkcovers/american.jpg" alt="cover">
+    <h2>American gods</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>Locked behind bars for three years, Shadow did his time, quietly waiting for the day when he could return to Eagle Point, Indiana. A man no longer scared of what tomorrow might bring, all he wanted was to be with Laura, the wife he deeply loved, and start a new life. But just days before his release, Laura and Shadow's best friend are killed in an accident. With his life in pieces and nothing to keep him tethered, Shadow accepts a job from a beguiling stranger he meets on the way home, an enigmatic man who calls himself Mr. Wednesday. A trickster and a rogue, Wednesday seems to know more about Shadow than Shadow does himself. Life as Wednesday's bodyguard, driver, and errand boy is far more interesting and dangerous than Shadow ever imagined. Soon Shadow learns that the past never dies... and that beneath the placid surface of everyday life a storm is brewing-an epic war for the very soul of America-and that he is standing squarely in its path.</p>
+    <h3>RELEASE DATE:</h3>
+    <p>June 19, 2001</p>
+    <h3>ISBN:</h3>
+    <p>978-0-06-053092-1</p>
+  </div>
+
+  <div class="item">
+    <img src="img/bkcovers/blueberry.jpg" alt="cover">
+    <h2>Blueberry Girl</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>A much-loved baby grows into a young woman: brave, adventurous, and lucky. Exploring, traveling, bathed in sunshine, surrounded by the wonders of the world. What every new parent or parent-to-be dreams of for her child, what every girl dreams of for herself. Neil Gaiman and beloved illustrator Charles Vess turn a wish for a new daughter into a book that celebrates the glory of growing up: a perfect gift for girls embarking on all the journeys of life, for their parents, and for everyone who loves them. This beautiful picture book is a lovely graduation or baby shower gift.</p>
+    <h3>RELEASE DATE:</h3>
+    <p>March 10, 2009</p>
+    <h3>ISBN:</h3>
+    <p>978-0060838089</p>
+  </div>
+
+
+  <div class="item">
+    <img src="img/bkcovers/coraline.jpg" alt="cover">
+    <h2>Coraline</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>When Coraline steps through a door to find another house strangely similar to her own (only better), things seem marvelous.
+
+    But there's another mother there, and another father, and they want her to stay and be their little girl. They want to change her and never let her go.
+
+    Coraline will have to fight with all her wits and courage if she is to save herself and return to her ordinary life.</p>
+    <h3>RELEASE DATE:</h3>
+    <p>July 2, 2002</p>
+    <h3>ISBN:</h3>
+    <p>9780380807345</p>
+  </div>
+
+  <div class="item">
+    <img src="img/bkcovers/fortunately.jpg" alt="cover">
+    <h2>Fortunately the milk</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>This is quite possibly the most exciting adventure ever to be written about milk since Tolstoy's epic novel War and Milk. Also it has aliens, pirates, dinosaurs and wumpires in it (but not the handsome, misunderstood kind), also a never-adequately-explained-bowl-of-piranhas, not to mention a Volcano God.</p>
+    <h3>RELEASE DATE:</h3>
+    <p>September 17, 2013</p>
+    <h3>ISBN:</h3>
+    <p>9780062224088</p>
+  </div>
+
+  <div class="item">
+    <img src="img/bkcovers/interworld.jpg" alt="cover">
+    <h2>interworld</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>InterWorld tells the story of Joey Harker, a very average kid who discovers that his world is only one of a trillion alternate earths. Some of these earths are ruled by magic. Some are ruled by science. All are at war. Joey teams up with alternate versions of himself from an array of these worlds. Together, the army of Joeys must battle evil magicians Lord Dogknife and Lady Indigo to keep the balance of power between all the earths stable. Teens—and tweens and adults—who obsessively read the His Dark Materials and Harry Potter series will be riveted by InterWorld and its sequel, The Silver Dream.</p>
+    <h3>RELEASE DATE:</h3>
+    <p>June 26, 2007</p>
+    <h3>ISBN:</h3>
+    <p>0061238961</p>
+  </div>
+
+  <div class="item">
+    <img src="img/bkcovers/norse.jpg" alt="cover">
+    <h2>Norse Mythology</h2>
+    <div class="blackline"></div>
+    <h3>SYNOPSIS:</h3>
+    <p>Neil Gaiman has long been inspired by ancient mythology in creating the fantastical realms of his fiction. Now he turns his attention back to the source, presenting a bravura rendition of the great northern tales. In Norse Mythology, Gaiman fashions primeval stories into a novelistic arc that begins with the genesis of the legendary nine worlds; delves into the exploits of the deities, dwarves, and giants; and culminates in Ragnarok, the twilight of the gods and the rebirth of a new time and people. Gaiman stays true to the myths while vividly reincarnating Odin, the highest of the high, wise, daring, and cunning; Thor, Odin's son, incredibly strong yet not the wisest of gods; and Loki, the son of giants, a trickster and unsurpassable manipulator. From Gaiman's deft and witty prose emerges the gods with their fiercely competitive natures, their susceptibility to being duped and to dupe others, and their tendency to let passion ignite their actions, making these long-ago myths breathe pungent life again.
+</p>
+    <h3>RELEASE DATE:</h3>
+    <p>February 7, 2017</p>
+    <h3>ISBN:</h3>
+    <p>9780393609097</p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+  </section>
+
+  <!------------ FOOTER------------>
+  <div class="footer">
+      <ul class="footer-top">
+        <li>COPYRIGHT @ 2018 NEIL GAIMAN</li>
+        <li><a href="#"class=>Privacy Notice </a></li>
+        <li><a href="#">Cookies Policy </a></li>
+        <li><a href="#">Terms & Conditions </a></li>
+        <li><a href="#">Site Credits</a></li>
+      </ul>
+      <ul class="footer-btm">
+        <li class="findus">FIND US ON</li>
+        <li><a href="#"><img class="footerlogo" src="img/twitter.png"/></a></li>
+        <li><a href="#"><img class="footerlogo" src="img/instagram.png"/></a></li>
+        <li><a href="#"><img class="footerlogo" src="img/facebook.png"/></a></li>
+      </ul>
+
+  </div>
+</body>
+</html>
