@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Share:400,400i,700,700i&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="body-change-color">
+<!--[if IE]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+
+<!-- nav bar -->
+<nav class="container bg-transparent p-0">
+
+  <div class="navbar navbar-expand-md justify-content-end justify-content-md-between p-0">
+
+    <!-- projects, about me, contact -->
+    <ul class="navbar-nav navbar-nav-1 align-self-end d-none d-md-flex" style="width: 25%">
+      <li class="nav-item pr-1 mt-3 mt-md-0">
+        <a class="nav-link nav-link-white nav-animation pb-0 pl-0" href="projects.html" style="line-height: 0.5; color: #fff;">projects</a> <!-- pl 0 for alignment purposes-->
+      </li>
+      <li class="nav-item disabled text-nowrap">
+        <a class="nav-link nav-link-white nav-animation pb-0" href="about.html" style="line-height: 0.5; color: #fff;">about me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-white nav-animation pb-0" href="contact.html" style="line-height: 0.5; color: #fff;">contact</a>
+      </li>
+
+    </ul>
+
+    <!-- logo -->
+    <ul class="navbar-nav navbar-nav-2 align-self-end d-none d-md-flex" id="logo-container">
+      <li class="nav-item pt-3">
+        <a href="index.html">
+          <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+          	 height="68.9px" viewBox="0 0 100 68.9" style="enable-background:new 0 0 100 68.9;" xml:space="preserve">
+          <defs>
+          </defs>
+          <g>
+          	<g>
+          		<rect x="35.4" y="64" class="logo-white" width="29" height="4.9"/>
+          		<path class="logo-white" d="M97.5,0H11.9v4.9h83.2v10.6h4.9v-13C100,1.1,98.9,0,97.5,0z"/>
+          		<path class="logo-white" d="M2.5,47.6h14.6v-4.9H4.9V0H0v45.2C0,46.5,1.1,47.6,2.5,47.6z"/>
+          		<rect x="12.1" y="20.7" class="logo-white" width="4.9" height="15.4"/>
+          		<rect x="22.6" y="20.7" class="logo-white" width="4.9" height="26.9"/>
+          		<path class="logo-white" d="M69.4,36.1h6.9v-4.9h-6.9v-5.6h6.9v-4.9h-9.4c-1.4,0-2.5,1.1-2.5,2.5v22c0,1.4,1.1,2.5,2.5,2.5h19.8v-4.9
+          			H69.4V36.1z"/>
+          		<path class="logo-white" d="M90.9,20.7c-5,0-9.1,4.1-9.1,9.1v6.3h4.9v-6.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v29.8h4.9V29.8
+          			C100,24.8,95.9,20.7,90.9,20.7z"/>
+          		<rect y="54.7" class="logo-white" width="86.8" height="4.9"/>
+          		<path class="logo-white" d="M54,10.1v29.8c0,1.5-1.2,2.8-2.8,2.8s-2.8-1.2-2.8-2.8V35v-3.8h-4.9V35c0,1.5-1.2,2.8-2.8,2.8S38,36.6,38,35
+          			V20.7h-4.9V35c0,4.2,3.4,7.7,7.7,7.7c1.1,0,2.1-0.2,3.1-0.6c0.9,3.2,3.9,5.6,7.4,5.6c4.2,0,7.7-3.4,7.7-7.7V10.1H54z"/>
+          	</g>
+          	<g>
+          		<circle id="logo-red" cx="14.6" cy="12.8" r="2.7"/>
+          		<circle id="logo-yellow" cx="25.1" cy="12.8" r="2.7"/>
+          	</g>
+          </g>
+          </svg>
+
+
+          <!-- <img style="width: 100px;" src="img/logo-darkblue.svg"/> -->
+        </a>
+      </li>
+    </ul>
+
+    <!-- vsco, behance, email & linkedin -->
+    <ul class="navbar-nav navbar-nav-3 align-self-end justify-content-end d-none d-md-flex" style="width: 25%">
+
+      <li class="nav-item px-2" id="icons-container">
+        <a href="https://vsco.co/li-iwen/images" target="_blank">
+
+          <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px"
+          	 height="45px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+          <defs>
+          </defs>
+          <path id="vsco-white" d="M12,0L12,0L12,0C5.4,0,0,5.4,0,12l0,0l0,0c0,6.6,5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z M17.9,19.9l-1-1.5
+          	c0.9-0.7,1.6-1.5,2.1-2.4l1.6,0.8C20,18.1,19,19.1,17.9,19.9z M6.9,20.6C5.8,19.9,4.8,19,4,18l1.5-1c0.6,0.8,1.4,1.5,2.2,2L6.9,20.6
+          	z M8.2,10c-0.6,1.2-0.7,2.7-0.1,3.9l-2.5,1.5c-1.2-2.2-1.1-4.9,0.2-7.1l0,0L8.2,10z M6.3,7.5C7.6,5.9,9.5,5,11.5,4.8v2.9
+          	c-1.1,0.1-2.1,0.6-2.8,1.5L6.3,7.5z M6.2,16.2l2.5-1.5c0.7,0.9,1.8,1.5,2.9,1.6v2.9C9.4,19,7.4,17.9,6.2,16.2z M8.6,12
+          	c0-1.9,1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4s-1.5,3.4-3.4,3.4S8.6,13.9,8.6,12z M21.8,10.5L20,10.6c-0.2-1-0.5-1.9-1-2.8l1.5-1
+          	C21.2,7.9,21.6,9.1,21.8,10.5z M18.3,15.4l-2.5-1.5c0.6-1.2,0.6-2.7-0.1-3.9l2.4-1.6C19.5,10.5,19.5,13.2,18.3,15.4z M17.8,16.2
+          	c-1.3,1.7-3.2,2.8-5.4,3v-2.9c1.1-0.1,2.2-0.7,2.9-1.6L17.8,16.2z M15.3,9.2c-0.7-0.8-1.7-1.3-2.8-1.5V4.8c2,0.1,3.9,1.1,5.2,2.7
+          	L15.3,9.2z M12.5,21.9v-1.8c1.3-0.1,2.6-0.5,3.7-1.1l1,1.5C15.8,21.3,14.2,21.8,12.5,21.9z M19.5,15.2c0.4-1,0.7-2.1,0.7-3.2
+          	c0-0.1,0-0.3,0-0.4l1.8-0.2c0,0.2,0,0.4,0,0.6c0,1.4-0.3,2.8-0.9,4L19.5,15.2z M20,6l-1.5,1c-0.6-0.8-1.4-1.5-2.2-2l0.9-1.6
+          	C18.2,4.1,19.2,5,20,6z M16.2,3l-0.9,1.6c-0.9-0.4-1.9-0.7-2.9-0.7V2C13.8,2.1,15.1,2.4,16.2,3z M11.5,2v1.8l0,0
+          	C10.2,3.9,9,4.3,7.8,5l-1-1.5C8.2,2.6,9.8,2.1,11.5,2z M7.1,5.5C6.2,6.2,5.5,7,4.9,7.9L3.3,7.1C4,5.9,4.9,4.8,6,4L7.1,5.5z M2,12
+          	c0-1.4,0.3-2.8,0.8-4l1.7,0.8c-0.4,1-0.7,2.1-0.7,3.2c0,0.1,0,0.3,0,0.4L2,12.6C2,12.4,2,12.2,2,12z M2.1,13.6L4,13.4
+          	c0.2,1,0.5,1.9,1,2.8l-1.5,1C2.8,16.1,2.3,14.9,2.1,13.6z M7.8,21l0.8-1.6c0.9,0.4,1.9,0.7,2.9,0.7l0,0v1.8
+          	C10.2,21.9,8.9,21.5,7.8,21z"/>
+          </svg>
+
+
+
+          <!-- <img id = "asdf" style="width: 45px;" src="img/icon-darkblue-vsco.svg"/> -->
+        </a>
+      </li>
+
+      <li class="nav-item px-2" id="icons-container">
+        <a href="https://www.behance.net/liiwen" target="_blank">
+
+          <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px"
+          	 height="45px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+          <defs>
+          </defs>
+          <path id="behance-white" d="M18,8.1h-4V7.2h4V8.1z M18.8,14.2c-0.8,2.3-5.9,3-5.9-1.6s5.5-4.4,6.1-0.9c0,0.3,0.1,0.7,0.1,1.2h-4.4
+          	c-0.1,1.7,1.8,1.9,2.4,1.2L18.8,14.2L18.8,14.2z M14.6,11.9h2.6C17.1,10.2,14.9,10.1,14.6,11.9z M8.8,16H5V7.2h4.1
+          	c3.2,0,3.3,3.2,1.6,4C12.7,12,12.7,16,8.8,16z M6.9,10.8h2c1.5,0,1.7-1.9-0.2-1.9H6.9V10.8z M8.7,12.3H6.9v1.9h1.8
+          	C10.5,14.2,10.4,12.3,8.7,12.3z M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2z M12,0C5.4,0,0,5.4,0,12
+          	s5.4,12,12,12s12-5.4,12-12S18.6,0,12,0z"/>
+          </svg>
+
+          <!-- <img style="width: 45px;" src="img/icon-darkblue-behance.svg"/> -->
+        </a>
+      </li>
+
+      <li class="nav-item px-2" id="icons-container">
+        <a href="mailto:ling.liiwen@gmail.com">
+
+          <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px"
+          	 height="45px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+          <defs>
+          </defs>
+          <path id="email-white" d="M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2z M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12
+          	s12-5.4,12-12S18.6,0,12,0z M12,12.5L6,8h12L12,12.5z M12,13.8L6,9.2V16h12V9.2L12,13.8z"/>
+          </svg>
+
+          <!-- <img style="width: 45px;" src="img/icon-darkblue-email.svg"/> -->
+        </a>
+      </li>
+
+      <li class="nav-item pl-2" id="icons-container"> <!-- pl instead of px 0 for alignment purposes-->
+        <a href="https://www.linkedin.com/in/liiwen" target="_blank">
+
+
+          <!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px"
+          	 height="45px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+          <defs>
+          </defs>
+          <path id="linkedin-white" d="M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2z M12,0C5.4,0,0,5.4,0,12s5.4,12,12,12
+          	s12-5.4,12-12S18.6,0,12,0z M10,8c0,0.6-0.4,1-1,1S8,8.6,8,8s0.4-1,1-1S10,7.4,10,8z M10,10H8v6h2V10z M13,10h-2v6h2v-2.9
+          	c0-1.7,2-1.9,2,0V16h2v-3.4c0-3.3-3.1-3.2-4-1.5V10z"/>
+          </svg>
+
+          <!-- <img style="width: 45px;" src="img/icon-darkblue-linkedin.svg"/> -->
+        </a>
+      </li>
+
+      </li>
+    </ul>
+
+    <div id="burger" class="d-block d-md-none position-fixed dropdown-menu-right">
+      <div class="line1 mt-5"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+  </div>
+
+</nav>
+<!-- end of nav bar -->
+
+  <div class="container">
+
+    <!-- <div class="startChange"></div> -->
+
+    <!-- Add your site or application content here -->
+    <div class="panel panel-1" data-color="blue">
+      <!-- <div class="d-flex col-8 text-white" style="height: 30vw; background-color:black;">
+      </div> -->
+      <img class="d-none d-md-block" src="img/mastheadImpact.svg" alt="" style="width:60%"/>
+      <!-- <div class="font-weight-bold text-center text-white">an individual who strives to make an impact on others,</div> -->
+
+      <!-- <h1 class="font-weight-bold text-center pt-4 pb-1 display-1 text-white">Welcome! Everything is fine.</h1> -->
+
+      <div class="d-flex d-md-none flex-column text-center text-white">
+        <p class="font-weight-bold mb-0" style="font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1">an individual who<br>strives to make an</p>
+        <h1 style="font-size: 7rem;">impact</h1>
+        <p class="font-weight-bold" style="font-size: 1.2rem; letter-spacing: 0.05rem;">on people's lives,</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="panel" data-color="yellow" style="margin-top: 20vh">
+    <div class="text-center display-1 text-white col">more than a designer,</div>
+  </div>
+  <div class="panel" data-color="red">
+    <div class="text-center display-1 text-white col">more than a coder,</div>
+  </div>
+
+  <div class="panel" data-color="darkBlue">
+
+    <div class="text-center text-white col">
+      <div class="display-3 mb-2" style="line-height:.6">
+        i'm an
+      </div>
+      <div id="anInteractionDesigner" class="display-1" style="line-height:0.9;">
+        interaction designer.
+      </div>
+
+      <div class="row p-4 justify-content-center align-items-center">
+        <a href="about.html">
+          <button type="button" class="btn btn-primary mb-3">MORE ABOUT ME</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="panel" data-color="white">
+    <div class="p-0" style="margin-top:30vw">
+      <h2 class="text-center">here are some of my works.</h2>
+
+      <div class="row m-0">
+
+        <div class="hoverDiv col-md-4 col-sm-6 p-0">
+          <a href="projects/1-harmonicity.html">
+            <img class="img-fluid" src="img/cover-photos/1.png"/>
+            <div class="text-light d-flex flex-column align-items-center justify-content-center" style="background: #071E80">
+              <h2 class="mb-0">Harmonicity 18</h2>
+              <p class="mb-0">graphic design, typography, branding, web design</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hoverDiv col-md-4 col-sm-6 p-0">
+          <a href="projects/2-cardnival.html">
+            <img class="img-fluid" src="img/cover-photos/2.png"/>
+            <div class="text-light d-flex flex-column align-items-center justify-content-center" style="background: #E4446D">
+              <h2 class="mb-0">Card-nival</h2>
+              <p class="mb-0">ui/ux design</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hoverDiv col-md-4 col-sm-6 p-0">
+          <a href="projects/3-theGraveyardBook.html">
+            <img class="img-fluid" src="img/cover-photos/3.png"/>
+            <div class="text-light d-flex flex-column align-items-center justify-content-center" style="background: #981B1F">
+              <h2 class="mb-0">The Graveyard Book</h2>
+              <p class="mb-0">responsive web design, html/css</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hoverDiv col-md-4 col-sm-6 p-0">
+          <a href="projects/4-grantNWant.html">
+            <img class="img-fluid" src="img/cover-photos/4.png"/>
+            <div class="text-light d-flex flex-column align-items-center justify-content-center" style="background: #FF6464">
+              <h2 class="mb-0">Grant 'N Want</h2>
+              <p class="mb-0">ui/ux design</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hoverDiv col-md-4 col-sm-6 p-0">
+          <a href="projects/5-nypHopeGraphics.html">
+            <img class="img-fluid" src="img/cover-photos/5.png"/>
+            <div class="text-light d-flex flex-column align-items-center justify-content-center" style="background: #0D0E0B">
+              <h2 class="mb-0">NYP Hope Graphics</h2>
+              <p class="mb-0">graphic design</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hoverDiv col-md-4 col-sm-6 p-0">
+          <a href="projects/6-kayakSafe.html">
+            <img class="img-fluid" src="img/cover-photos/6.png"/>
+            <div class="text-light d-flex flex-column align-items-center justify-content-center" style="background: #002D5B">
+              <h2 class="mb-0">Kayak-Safe</h2>
+              <p class="mb-0">web app</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row p-3 m-0 justify-content-center">
+        <a href="projects.html">
+          <button type="button" class="btn btn-primary">SEE MORE</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- why not hire me thing -->
+  <div class="panel" data-color="blue">
+    <div class="d-flex flex-column" style="margin-top:30vw">
+      <!-- <div class="d-flex flex-column justify-content-between align-items-center">
+         <span class="dot"></span>
+         <span class="dot"></span>
+       </div> -->
+       <div class="d-flex">
+         <div class="text-center display-3 text-white p-5" style="margin-top: 10vh">or, why not</div>
+       </div>
+
+       <div class="d-flex flex-column align-items-center">
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+             <span class="dot"></span>
+       </div>
+
+
+  </div>
+</div>
+
+
+  <div class="panel" data-color="white">
+
+    <div class="d-flex flex-column">
+
+      <div class="text-center display-1">hire me?</div>
+
+      <div class="row p-1 flex-column align-content-center justify-content-around">
+        <a href="resume.html" target="_blank" class="align-self-center">
+          <button type="button" class="btn btn-primary mb-3">DOWNLOARD RESUME</button>
+        </a>
+
+        <a href="mailto:ling.liiwen@gmail.com" class="align-self-center">
+          <button type="button" class="btn btn-primary">EMAIL ME</button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/vendor/bootstrap.bundle.js"></script> <!-- lw: bootstrap added -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+
+  $(function() {
+    $(' .hoverDiv ').each( function() { $(this).hoverdir(); } );
+    hoverDelay : 75;
+
+    responsive();
+  });
+
+
+
+  //SCROLL CHANGE COLOUR EFFECT
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+
+  $(window).scroll(function() {
+
+    // selectors
+    var $window = $(window),
+        $body = $('.body-change-color'),
+        $panel = $('.panel');
+
+    // Change 33% earlier than scroll position so colour is there when you arrive.
+    var scroll = $window.scrollTop() + ($window.height() / 3);
+
+    $panel.each(function () {
+      var $this = $(this);
+
+      // if position is within range of this panel.
+      // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+      // Remember we set the scroll to 33% earlier in scroll var.
+      if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+        // Remove all classes on body with color-
+        $body.removeClass(function (index, css) {
+          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+        });
+
+        // Add class of currently active div
+        $body.addClass('color-' + $(this).data('color'));
+      }
+    });
+
+  }).scroll();
+
+  function responsive() {
+    if($(window).width() < 768) {
+     // $("#anInteractionDesigner").css('font-size','4rem');
+     $(".display-1").css('font-size','4.5rem');
+     $("h2").css('font-size','1.8rem');
+
+
+
+    }
+  }
+
+
+
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
